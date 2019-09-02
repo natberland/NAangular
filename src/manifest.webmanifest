@@ -1,8 +1,8 @@
 {
   "name": "projeto-angular",
-  "short_name": "projeto-angular",
-  "description": "My Fancy PWA is a dummy Angular app which demonstrates a PWA's behaviour on different platforms.",
-  "theme_color": "#1976d2",
+  "short_name": "nangular",
+  "description": "Nangular- PWA",
+  "theme_color": "#FF568F",
   "background_color": "#fafafa",
   "display": "standalone",
   "orientation": "portrait",
