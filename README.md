@@ -35,4 +35,4 @@ ng serve -o
 npm install --save tslib
 ```
 
- ## Para ver a app:		https://naangular2.web.app/src/
+ ## Para ver a app:		https://naangular.web.app/src
