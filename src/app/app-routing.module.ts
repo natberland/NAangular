@@ -4,7 +4,7 @@ import { Routes, RouterModule } from '@angular/router';
 import { StartPage } from './pages/start/start.page';
 import { UserListPage } from './pages/user-list/user-list.page';
 import { UserPage } from './pages/user/user.page';
-import { NotFoundPage } from './pages/not-found/not-found.page';
+import { NotFoundPage } from './pages/error/error.page';
 
 const routes: Routes = [
   { path: '', component: StartPage },

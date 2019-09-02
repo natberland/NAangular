@@ -28,7 +28,7 @@ import { ServiceWorkerModule } from '@angular/service-worker';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FilterPipe } from './pipes/filter.pipe';
 import { StartPage } from './pages/start/start.page';
-import { NotFoundPage } from './pages/not-found/not-found.page';
+import { NotFoundPage } from './pages/error/error.page';
 
 @NgModule({
   declarations: [
