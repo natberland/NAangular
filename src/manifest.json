@@ -2,7 +2,7 @@
     "name": "NAngular",
     "short_name": "projeto-NAngular",
     "description": "Trabalho de Angular - pwa",
-    "theme_color": "#1976d2",
+    "theme_color": "#ff568f",
     "background_color": "#fafafa",
     "display": "standalone",
     "orientation": "portrait",
