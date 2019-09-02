@@ -3,7 +3,7 @@ PWA em Angular com hospedagem e autenticação de usuários via Firebase
 
 ## Instalação
 
-Depois de clonar o projeto, execute os seguintes comando na pasta raiz do projeto:
+Depois de clonar o projeto, execute os seguintes comandos na pasta raiz do projeto:
 
 - Instalação da CLI do Angular
 ```sh
@@ -18,11 +18,6 @@ npm install
 - Compilação da aplicação
 ```sh
 ng build
-```
-
-- Inicialização da aplicação localmente
-```sh
-ng serve -o
 ```
 
 - Inicialização da aplicação localmente
