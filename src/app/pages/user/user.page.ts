@@ -15,10 +15,9 @@ export class UserPage {
     name: new FormControl('', Validators.required),
     email: new FormControl('', Validators.required),
     cpf: new FormControl('', Validators.required),
-    street: new FormControl(''),
-    number: new FormControl(''),
-    details: new FormControl(''),
-    cep: new FormControl(''),
+    address: new FormControl('', Validators.required),
+    number: new FormControl('', Validators.required),
+    zip: new FormControl('', Validators.required),
   });
 
   userId: string = '';

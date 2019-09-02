@@ -7,41 +7,47 @@
         <mat-form-field>
             <input matInput placeholder="Nome" type="text" name="name" formControlName="name" maxlength="50"/>
             <mat-error *ngIf="userForm.controls.name.invalid && userForm.controls.name.touched">
-                Nome não pode ser vazio
+                Esse campo não pode ser vazio
             </mat-error>
         </mat-form-field>
         <br>
         <mat-form-field>
             <input matInput type="email" name="email" formControlName="email" placeholder="E-mail" maxlength="40"/>
             <mat-error *ngIf="userForm.controls.email.invalid && userForm.controls.email.touched">
-                E-mail não pode ser vazio
+                Esse campo não pode ser vazio
             </mat-error>
         </mat-form-field>
         <br>
         <mat-form-field>
             <input matInput type="text" name="cpf" formControlName="cpf" placeholder="CPF" maxlength="11"/>
             <mat-error *ngIf="userForm.controls.cpf.invalid && userForm.controls.cpf.touched">
-                CPF não pode ser vazio
+                Esse campo não pode ser vazio
             </mat-error>
         </mat-form-field>
         <br>
         <mat-form-field>
-            <input matInput type="text" name="street" formControlName="street" placeholder="Rua" maxlength="70"/>
+            <input matInput type="text" name="address" formControlName="address" placeholder="rua" maxlength="70"/>
+            <mat-error *ngIf="userForm.controls.address.invalid && userForm.controls.address.touched">
+                Esse campo não pode ser vazio
+            </mat-error>
         </mat-form-field>
         <br>
         <mat-form-field>
-            <input matInput type="text" name="number" formControlName="number" placeholder="Número" maxlength="7"/>
+            <input matInput type="text" name="number" formControlName="number" placeholder="número e apto" maxlength="10"/>
+            <mat-error *ngIf="userForm.controls.number.invalid && userForm.controls.number.touched">
+                Esse campo não pode ser vazio
+            </mat-error>
+        
         </mat-form-field>
         <br>
         <mat-form-field>
-            <input matInput type="text" name="details" formControlName="details" placeholder="Complemento" />
+            <input matInput type="text" name="zip" formControlName="zip" placeholder="cep" maxlength="9"/>
+            <mat-error *ngIf="userForm.controls.zip.invalid && userForm.controls.zip.touched">
+                Esse campo não pode ser vazio
+            </mat-error>
         </mat-form-field>
         <br>
-        <mat-form-field>
-            <input matInput type="text" name="cep" formControlName="cep" placeholder="CEP" maxlength="8"/>
-        </mat-form-field>
-        <br>
-        <button mat-raised-button type="submit" [disabled]="!userForm.valid" color="primary">
+        <button mat-raised-button type="submit" [disabled]="!userForm.valid" color="#00FF00	">
             <span *ngIf="!userId">Criar</span>
             <span *ngIf="userId">Atualizar</span>
         </button>
