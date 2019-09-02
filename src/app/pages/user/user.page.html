@@ -1,0 +1,49 @@
+<mat-toolbar class="title-toolbar">
+    <span>Usuário</span>
+</mat-toolbar>
+<mat-progress-bar mode="indeterminate" *ngIf="loading"></mat-progress-bar>
+<div class="user">
+    <form [formGroup]="userForm" (ngSubmit)="onSubmit()">
+        <mat-form-field>
+            <input matInput placeholder="Nome" type="text" name="name" formControlName="name" maxlength="50"/>
+            <mat-error *ngIf="userForm.controls.name.invalid && userForm.controls.name.touched">
+                Nome não pode ser vazio
+            </mat-error>
+        </mat-form-field>
+        <br>
+        <mat-form-field>
+            <input matInput type="email" name="email" formControlName="email" placeholder="E-mail" maxlength="40"/>
+            <mat-error *ngIf="userForm.controls.email.invalid && userForm.controls.email.touched">
+                E-mail não pode ser vazio
+            </mat-error>
+        </mat-form-field>
+        <br>
+        <mat-form-field>
+            <input matInput type="text" name="cpf" formControlName="cpf" placeholder="CPF" maxlength="11"/>
+            <mat-error *ngIf="userForm.controls.cpf.invalid && userForm.controls.cpf.touched">
+                CPF não pode ser vazio
+            </mat-error>
+        </mat-form-field>
+        <br>
+        <mat-form-field>
+            <input matInput type="text" name="street" formControlName="street" placeholder="Rua" maxlength="70"/>
+        </mat-form-field>
+        <br>
+        <mat-form-field>
+            <input matInput type="text" name="number" formControlName="number" placeholder="Número" maxlength="7"/>
+        </mat-form-field>
+        <br>
+        <mat-form-field>
+            <input matInput type="text" name="details" formControlName="details" placeholder="Complemento" />
+        </mat-form-field>
+        <br>
+        <mat-form-field>
+            <input matInput type="text" name="cep" formControlName="cep" placeholder="CEP" maxlength="8"/>
+        </mat-form-field>
+        <br>
+        <button mat-raised-button type="submit" [disabled]="!userForm.valid" color="primary">
+            <span *ngIf="!userId">Criar</span>
+            <span *ngIf="userId">Atualizar</span>
+        </button>
+    </form>
+</div>
