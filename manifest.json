@@ -1,0 +1,39 @@
+{
+    "name": "NAngular",
+    "short_name": "projeto-NAngular",
+    "description": "Trabalho de Angular - pwa",
+    "theme_color": "#1976d2",
+    "background_color": "#fafafa",
+    "display": "standalone",
+    "orientation": "portrait",
+    "scope": "/",
+    "start_url": "/?utm_source=itnext_pwa_a2hs",
+    "icons": [
+      {
+        "src": "assets/icons/icon-purple-tentacle-72x72.png",
+        "sizes": "72x72",
+        "type": "image/png"
+      },
+      {
+        "src": "assets/icons/icon-purple-tentacle-96x96.png",
+        "sizes": "96x96",
+        "type": "image/png"
+      },
+      {
+        "src": "assets/icons/icon-purple-tentacle-128x128.png",
+        "sizes": "128x128",
+        "type": "image/png"
+      },
+      {
+        "src": "assets/icons/icon--purple-tentacle-256x256.png",
+        "sizes": "256x256",
+        "type": "image/png"
+      },
+      {
+        "src": "assets/icons/icon-purple-tentacle-512x512.png",
+        "sizes": "512x512",
+        "type": "image/png"
+      }
+    ],
+    "gcm_sender_id": "66954586879"
+  }
