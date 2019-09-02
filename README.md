@@ -1,5 +1,5 @@
-# Projeto Angular - FIAP
-PWA baseada em Angular e Firebase
+# PWA - Projeto Angular - 
+PWA em Angular com hospedagem e autenticação de usuários via Firebase
 
 ## Instalação
 
@@ -25,21 +25,14 @@ ng build
 ng serve -o
 ```
 
-## Funcionalidades
+- Inicialização da aplicação localmente
+```sh
+ng serve -o
+```
 
-- **Autenticação:**
+- tslib (Biblioteca com as funções de ajuda do TypeScript)
+```sh
+npm install --save tslib
+```
 
-  - Usuário deve estar autenticado para prosseguir com a naveção da aplicação;
-  - Caso não esteja, é exibida a tela de Login para que o realize através do seu email e senha;
-  - Caso não tenha login, é possível cadastrar-se;
-  - Uma vez logado, o usuário segue para a tela de listagem de usuários.
-
-- **Usuários:**
-
-  - Tela de Listagem de Usuários é exibida caso usuário esteja autenticado;
-  - É possível filtrar pelo nome do usuário, cadastrar um novo e editar um existente;
-  - Também existe a possibilidade de exclusão de usuário cadastrado.
-  
- ## Demo		
-
-Teste esse app através do seguinte link [ProjetoAngular](https://projeto-angular-246bb.web.app)
+ ## Para ver a app:		https://naangular2.web.app/src/
